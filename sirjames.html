@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cat's Website</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+            transition: background-image 1s ease;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+            text-align: justify;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        button {
+            display: none;  /* Hide the button */
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Meet My Cat - Sir James</h1>
+    </header>
+
+    <section>
+        <img src="file:///Users/boris/Documents/Photos/Fotos/James/James%2016.12.2016/DSC05628.JPG" alt="Sir James">
+        <h2>About My Cat</h2>
+        <p>
+            My male feline companion is a British Shorthair with a penchant for the finer things in life, especially when it comes to his palate. Among his favorite indulgences are tuna, chicken, and even butterflies. Yes, you read that right—butterflies! It seems his hunting instincts extend beyond the kitchen to the great outdoors, where he delights in the chase and occasional capture of these delicate creatures.
+        </p>
+        <p>
+            Tuna, with its rich flavor and tender texture, is a culinary delight that never fails to elicit a purr of contentment. Whether served fresh or in his favorite cat treats, it's a flavor that captures his discerning taste buds. Chicken, cooked to perfection, is another irresistible treat. The succulent meat provides both a satisfying crunch and a burst of flavor that leaves him licking his whiskers in delight.
+        </p>
+        <p>
+            Surprisingly, butterflies are not just a fleeting fascination for him; they're a source of entertainment and a testament to his prowess as a skilled hunter. With grace and agility, he'll stalk his fluttering prey, showcasing a playful side that contrasts with the regal demeanor characteristic of the British Shorthair breed.
+        </p>
+        <p>
+            As his human, witnessing the joy these culinary delights bring to his life is a rewarding experience. It's a reminder of the unique and endearing qualities that make him an integral part of our household. To learn more about the British Shorthair breed, feel free to explore the <a href="https://en.wikipedia.org/wiki/British_Shorthair" target="_blank">Wikipedia page</a>.
+        </p>
+    </section>
+
+    <footer>
+        &copy; 2024 My Cat's Website
+    </footer>
+
+    <script>
+        function changeSeasonAutomatically() {
+            var currentDate = new Date();
+            var currentMonth = currentDate.getMonth() + 1;
+
+            var gradientColor;
+
+            if (currentMonth >= 3 && currentMonth <= 5) {
+                // Spring
+                gradientColor = 'linear-gradient(to bottom, #87CEEB, #3CB371)';
+            } else if (currentMonth >= 6 && currentMonth <= 8) {
+                // Summer
+                gradientColor = 'linear-gradient(to bottom, #87CEFA, #FFD700)';
+            } else if (currentMonth >= 9 && currentMonth <= 11) {
+                // Autumn
+                gradientColor = 'linear-gradient(to bottom, #F4A460, #8B4513)';
+            } else {
+                // Winter
+                gradientColor = 'linear-gradient(to bottom, #ADD8E6, #00BFFF)';
+            }
+
+            document.body.style.background = gradientColor;
+        }
+
+        // Initial background based on the current season
+        changeSeasonAutomatically();
+    </script>
+
+</body>
+</html>
